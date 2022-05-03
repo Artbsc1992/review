@@ -108,6 +108,5 @@ todoItemsList.addEventListener('click', (e) => {
 
 // load page
 
-window.addEventListener('load', () => {
-  getLocal();
-});
+
+getLocal();
