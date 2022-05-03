@@ -1,0 +1,128 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #8b98e4), color-stop(1, rgb(85, 95, 236)));
+}
+
+#task {
+  outline: none;
+}
+
+.title {
+  display: flex;
+  justify-content: space-around;
+}
+
+.restart {
+  display: none;
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 1.5vw;
+}
+
+p {
+  font-size: 50px;
+  color: #6d6d6d;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.add-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-add {
+  background-color: transparent;
+  border: none;
+  color: black;
+  text-align: right;
+}
+
+form {
+  background-color: aliceblue;
+  box-shadow: 0 16px 20px rgba(0, 0, 0, 0.5);
+  width: 700px;
+  min-height: auto;
+  border-radius: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+ul li:nth-child(odd) {
+  background-color: rgb(174, 174, 180);
+}
+
+.task-description {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  height: 30px;
+}
+
+.input-description {
+  width: 550px;
+  outline: none !important;
+}
+
+.checkbox {
+  margin-left: 20px;
+}
+
+.clear-all {
+  background-color: aliceblue;
+  border: none;
+  color: rgb(177, 177, 177);
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  padding: 20px 0 20px 0;
+}
+
+.clear-all:hover {
+  color: black;
+  transition: 0.3s;
+}
+
+.checked .task-description .input-description {
+  text-decoration: line-through;
+  color: rgb(209, 209, 209);
+}
+
+.delete-button {
+  display: none;
+  background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%);
+  transition: 0.5s;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #eee;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  width: 25px;
+}
+
+.delete-button.active {
+  display: block;
+}
+
+.dots {
+  width: 25px;
+  text-align: center;
+}
+
+.dots.active {
+  display: none;
+}
